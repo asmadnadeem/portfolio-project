@@ -1,0 +1,130 @@
+/* --- Reset --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* --- Body --- */
+
+body {
+    background-color: #f8f4ef;
+    /* warm cream tone */
+    color: #3b2f2f;
+    line-height: 1.7;
+    padding: 2rem 10%;
+}
+
+
+/* --- Header --- */
+
+header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d4c4b2;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #5c4033;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    color: #7d5a50;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+
+/* --- Sections --- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+
+/* Subtle dividers */
+
+section {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8ddd1;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+
+/* Section Titles */
+
+section h2 {
+    color: #6b4f3b;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+
+/* Accent underline for titles */
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #c1a182;
+    margin-top: 4px;
+}
+
+
+/* Paragraphs & Lists */
+
+section p,
+section ul {
+    font-size: 1rem;
+    color: #3b2f2f;
+    max-width: 700px;
+    opacity: 0.95;
+}
+
+ul li {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* --- Footer --- */
+
+footer {
+    color: #7d5a50;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-top: 1px solid #d4c4b2;
+    padding-top: 1rem;
+    opacity: 0.9;
+}
+
+
+/* --- Responsive for smaller screens --- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem 6%;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    section h2 {
+        font-size: 1.3rem;
+    }
+}
